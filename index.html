@@ -13,23 +13,26 @@
 </head>
 
 <body>
+    <h1>Bienvenido al encriptador de palabras</h1>
+
     <div class="wrapper">
         <div class="text">
-            <textarea id="texto" placeholder="Ingrese su texto aquí"></textarea>
+            <textarea id="entrada" placeholder="Ingrese su texto aquí (use solo letras minúsculas)"></textarea>
             <div class="buttons">
                 <button id="uno" type="button">Encriptar</button>
                 <button id="dos" type="button">Desencriptar</button>
             </div>
-            <span>Use solo letras minúsculas</span>
         </div>
 
 
         <div class="result">
-            <textarea name="" id="encriptado" cols="30" rows="10" readonly></textarea>
+            <textarea name="" id="encriptado" readonly></textarea>
             <!-- Creating a button and asigning it a js function to copy text on click -->
             <button id="copy" onclick="copiar()">Copiar</button>
         </div>
     </div>
+
+
 
     <script src="script.js"></script>
 </body>

@@ -1,6 +1,6 @@
 //Obtain text from textarea and save on variable to be used later
 document.getElementById("uno").onclick = function convertir() {
-    var myName = document.getElementById("texto").value;
+    var myName = document.getElementById("entrada").value;
 
     //Create an array to save the text split
     var cut = myName.split('');
@@ -31,7 +31,7 @@ document.getElementById("uno").onclick = function convertir() {
 
 //Obtaining data from second button (same text but different js function)
 document.getElementById("dos").onclick = function revertir() {
-    var convertido = document.getElementById("texto").value;
+    var convertido = document.getElementById("entrada").value;
     console.log(convertido);
 
     //Replacing each letter combination for its respective vowel

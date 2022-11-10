@@ -1,188 +1,12 @@
-/* body {
-    height: 100%;
-    width: 100%;
-    background-color: #7243f3;
-    display: flex;
-}
-
-img {
-    height: 48px;
-    width: 31.085588455200195px;
-    left: 44px;
-    top: 0px;
-    border-radius: 0px;
-
-    position: absolute;
-    left: 200px;
-    top: 3%;
-    bottom: 0%;
-
-}
-
-#texto {
-    position: absolute;
-    height: 288px;
-    width: 680px;
-    left: 240px;
-    top: 120px;
-    padding: 10px;
-    border-radius: 10px;
-    outline: none;
-    border-color: transparent;
-    background-color: #c7b6f5;
-    color: #001faa;
-
-    font-family: Inter;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 48px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-span {
-    position:absolute;
-    left: 250px;
-    top: 590px;
-    width: 228px;
-    height: 18px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-
-
-    color: #2c3033;
-
-    opacity: 0.8;
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-#uno{
-    position: absolute;
-    top: 630px;
-    left: 240px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px 125px;
-    gap: 8px;
-
-    width: 328px;
-    height: 67px;
-
-    background: #ec6cbb;
-    border-color: #c7b6f5;
-    border-radius: 24px;
-
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
-    color: white;
-    font-weight: bold;
-}
-
-#dos{
-    position: absolute;
-    top: 630px;
-    left: 600px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px 125px;
-    gap: 8px;
-
-    width: 328px;
-    height: 67px;
-
-    background: #ec6cbb;
-    border-color: #c7b6f5;
-    border-radius: 24px;
-
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
-    color: white;
-    font-weight: bold;
-}
-
-#uno:hover,
-#dos:hover{
-    background-color: blueviolet;
-}
-
-#result{
-    position: absolute;
-    width: 400px;
-    height: 800px;
-    left: 1000px;
-    top: 40px;
-
-
-    background: #FFFFFF;
-
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-    resize: none;
-
-    padding: 20px;
-    font-family: Inter;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 48px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #001faa;
-}
-textarea{
-    position:absolute;
-    top: 8%;
-    left: 50%;
-    height:75%;
-    width: 25%;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    resize: none;
-
-    padding: 20px;
-    font-family: Inter;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 48px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #001faa;
-}
-button{
-    position:absolute;
-    top: 88%;
-    left: 56%;
-    height: 5%;
-    width: 15%;
-    background-color: #ec6cbb;
-    border-radius: 10px;
-    outline: none;
-}
-button:hover{
-    background-color: blueviolet ;
-} */
-
 body {
     margin: 0 auto;
     background: rgb(0,81,125);
     background: radial-gradient(circle, rgba(0,81,125,0.9332107843137255) 22%, rgba(0,63,80,1) 49%);
     font-family: Inter;
-    color: rgb(219, 171, 171);
+    color: rgb(230, 185, 185);
+}
+h1{
+    text-align: center;
 }
 
 .wrapper{
@@ -195,37 +19,77 @@ body {
     text-align: center;
 }
 
-#text{
-    flex-direction: column;
+.text{
     width: 50%;
-    height: 50%;
+    height: 66%;
 }
 
-#texto{
-    width: 800px;
+.result{
+    margin-left: 100px;
+    width: 50%;
+    height: 80%;
+}
+
+.result button{
+    width: 50%;
+    margin-right: 20px;
+}
+
+#encriptado{
+    width: 80%;
+    height: 100%;
+}
+
+textarea{
+    border: 5px solid #2e9fcc;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    padding:10px;
+}
+
+#entrada{
+    width: 100%;
     height: 500px;
 }
 
 button{
     background-color: white;
+    border: 5px solid #2e9fcc;
+    border-radius: 5px;
     width: 45%;
     height: 50px;
     margin-right: 10px;
     margin-left: 20px;
     margin-top: 7%;
-    margin-bottom: 25%;
+    font-size: 1.3rem;
+    word-wrap: break-word;
+}
+
+button:hover{
+    background-color: #2e9fcc;
+    color: white;
 }
 
 span{
-    background-color: white;
-    color: black;
-    font-size: 1.2rem;
-    border: 2px solid  rgba(0,63,80,1);
+    position: absolute;
+    background-color: #2e9fcc;
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: bold;
+    border: 2px solid  2e9fcc;
     padding: 10px;
+    border-radius: 10px;
 }
 
+@media screen and (max-width: 1200px){
+    button{
+        width: 100%;
+    }
 
-#encriptado{
-    height: 100%;
-    width: 500px;
+    .result button{
+        width: 80%;
+        margin: 0;
+        margin-top: 10px;
+    }
 }
