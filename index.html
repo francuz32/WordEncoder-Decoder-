@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="text">
+            <textarea id="texto" placeholder="Ingrese su texto aquí"></textarea>
+            <div class="buttons">
+                <button id="uno" type="button">Encriptar</button>
+                <button id="dos" type="button">Desencriptar</button>
+            </div>
+            <span>Use solo letras minúsculas</span>
+        </div>
+
+
+        <div class="result">
+            <textarea name="" id="encriptado" cols="30" rows="10" readonly></textarea>
+            <!-- Creating a button and asigning it a js function to copy text on click -->
+            <button id="copy" onclick="copiar()">Copiar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
