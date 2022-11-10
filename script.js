@@ -45,6 +45,12 @@ document.getElementById("dos").onclick = function revertir() {
 //Function to copy text in clipboard
 function copiar() {
     var copiarTexto = document.getElementById("encriptado");
-    navigator.clipboard.writeText(copiarTexto.value);
-    alert("Texto copiado");
+    navigator.clipboard.writeText(copiarTexto.value)
+    .then(() => {
+        alert("Texto copiado");
+    })
+    .catch(() => {
+        alert("Hubo un problema");
+    });
+
 }
